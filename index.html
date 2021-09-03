@@ -5,14 +5,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brenda Andreia</title>
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Skin Cor padrão -->
-    <link rel="stylesheet" type="text/css" href="css/skins/color1.css" />
-</head>
+    <link rel="stylesheet" type="text/css" href="css/skins/color1.css">
+    <!--Escolhendo cor-->
+    <link rel="stylesheet" type="text/css" class="alternate-style" href="css/skins/color1.css" title="color1"
+        disabled />
+    <link rel="stylesheet" type="text/css" class="alternate-style" href="css/skins/color2.css" title="color2"
+        disabled />
+    <link rel="stylesheet" type="text/css" class="alternate-style" href="css/skins/color3.css" title="color3"
+        disabled />
+    <link rel="stylesheet" type="text/css" href="css/style-switcher.css">
+</head>>
 
 <body>
-
     <!-- header start-->
     <header class="header">
         <div class="container">
@@ -517,8 +524,27 @@
             <!--form para contato end-->
         </div>
     </section>
+    <!--escolhendo estilo start-->
+    <div class="style-switcher sombra-externa">
+        <div class="style-switcher-toggler s-icon sombra-externa hover-sombra">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon sombra-externa hover-sombra">
+            <i class="fas "></i>
+        </div>
+        <h4>Cor do Tema</h4>
+        <div class="colors">
+            <span class="color1" onclick="setActiveStyle('color1')"></span>
+            <span class="color2" onclick="setActiveStyle('color2')"></span>
+            <span class="color3" onclick="setActiveStyle('color3')"></span>
+
+        </div>
+    </div>
+    <!--escolhendo estilo end-->
     <!--main js-->
     <script src="js/main.js"></script>
+    <!--style-switcher js-->
+    <script src="js/style-switcher.js"></script>
 </body>
 
 </html>
